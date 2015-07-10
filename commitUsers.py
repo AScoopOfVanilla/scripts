@@ -1,6 +1,8 @@
 import json
 import MySQLdb
 
+#Author: Kazra
+
 __SERVER__ = 'localhost'
 __USERNAME__ = 'user'
 __PASSWORD__ = 'password'
