@@ -17,6 +17,7 @@ cursor = db.cursor()
 
 for x in range(0, totalItem):
     try:
+        #Modify for your table structure, initial commit for asov: User, UUID, Approver, Approve Date, Last Login, Exempt from epiry.
         cursor.execute("INSERT INTO Users VALUES ('{0}','{1}','SYSTEM',NOW(),NOW(),0)".format(data[x]['name'],data[x]['uuid']))
         db.commit()
     except:
